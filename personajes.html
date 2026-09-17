@@ -1,106 +1,107 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Patrio - Personajes Ilustres</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<!DOCTYPE html> <!-- Declara que este documento sigue el estándar de HTML5 -->
+<html lang="es"> <!-- Elemento raíz que envuelve el código e indica que el idioma principal es español -->
+<head> <!-- Sección de información de configuración del sitio web -->
+    <meta charset="UTF-8"> <!-- Define la codificación UTF-8 para visualizar correctamente acentos y la 'ñ' -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta el tamaño de la página al ancho de pantalla del dispositivo segun corresponda -->
+    <title>Mes Patrio - Personajes Ilustres</title> <!-- Establece el título que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula el archivo de hojas de estilo externas CSS 'styles.css' -->
+</head> <!-- Cierre de la sección de informacion y configuracion del sitio web -->
+<body> <!-- Inicio del cuerpo del documento que agrupa los elementos visibles en pantalla -->
 
-    <header>
-        <h1>VIVA MEXICO!</h1>
-        <img style="border: 4px solid var(--dorado); border-radius: 8px;" src="Mural.png">
-    </header>
+    <header> <!-- Encabezado principal del sitio web -->
+        <h1>VIVA MEXICO!</h1> <!-- Título principal de nivel 1 -->
+        <img style="border: 4px solid var(--dorado); border-radius: 8px;" src="Mural.png"> <!-- Muestra la imagen 'Mural.png' aplicando estilos directos de borde dorado y esquinas redondeadas -->
+    </header> <!-- Cierre de la sección del encabezado -->
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="personajes.html" class="active">Personajes Ilustres</a>
-        <a href="mitos.html">Datos Curiosos y Mitos</a>
-        <a href="fechas.html">Fechas Importantes</a>
-    </nav>
+    <nav> <!-- Barra de navegación con los enlaces a las diferentes secciones -->
+        <a href="index.html">Inicio</a> <!-- Enlace para dirigir a la página principal -->
+        <a href="personajes.html" class="active">Personajes Ilustres</a> <!-- Enlace a la página actual, destacada con la clase 'active' -->
+        <a href="mitos.html">Datos Curiosos y Mitos</a> <!-- Enlace hacia la página de Datos Curiosos y Mitos -->
+        <a href="fechas.html">Fechas Importantes</a> <!-- Enlace hacia la página de Fechas Importantes -->
+    </nav> <!-- Cierre del menú de navegación -->
 
-    <main>
-        <h2 class="page-title">PERSONAJES QUE FORJARON LA INDEPENDENCIA:</h2>
-        <h2 class="page-title">(15 y 16 de septiembre)</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="date">(1) Miguel Hidalgo y Costilla (1753–1811)</div>
-                <p>Sacerdote y militar erudito, formado en el Colegio de San Nicolás. Dominaba lenguas indígenas como náhuatl y otomí, además de francés. Tras el Grito de Dolores, abolió la esclavitud en México mediante un decreto emitido en Guadalajara en diciembre de 1810. Fue capturado y fusilado en Chihuahua en 1811. Considerado el "Padre de la Patria", inició la gesta independentista la madrugada del 16 de septiembre de 1810 con el famoso Grito de Dolores.</p>
-                <img src="Miguel2.png" width="200" height="200">
-            </div>
-            <div class="timeline-item">
-                <div class="date">(2) Josefa Ortiz de Domínguez (1768–1829):</div>
-                <p>Esposa del corregidor de Querétaro, Miguel Domínguez. Facilitó su hogar para las reuniones clandestinas organizadas bajo la fachada de tertulias literarias. Al ser descubierta la conspiración, logró enviar un mensaje al capitán Ignacio Allende, lo que precipitó el inicio de la contienda.</p>
-                <img src="josefa.png" width="200" height="200">
-            </div>
-            <div class="timeline-item">
-                <div class="date">(3) José María Morelos y Pavón (1765–1815):</div>
-                <p>Exalumno de Hidalgo, asumió el liderazgo del movimiento tras la muerte de este. Destacó por su estrategia militar en el sur del país y por convocar el Congreso de Anáhuac en 1813, donde presentó los Sentimientos de la Nación, sentando las bases del México republicano e independiente.</p>
-                <img src="jose.png" width="200" height="200">
-            </div>
-            <div class="timeline-item">
-                <div class="date">(4) Ignacio Allende (1769–1811):</div>
-                <p>Capitán del regimiento de Dragones de la Reina. Aportó la formación militar estratégica en los inicios del movimiento. Tuvo importantes diferencias tácticas con Hidalgo respecto al control de las tropas. Fue capturado en Acatita de Baján y ejecutado junto a los primeros caudillos.</p>
-                <img src="ignacio.png" width="200" height="200">
-            </div>
+    <main> <!-- Contenedor principal de los datos e información de esta página -->
+        <h2 class="page-title">PERSONAJES QUE FORJARON LA INDEPENDENCIA:</h2> <!-- Título secundario que introduce la primera categoría de personajes -->
+        <h2 class="page-title">(15 y 16 de septiembre)</h2> <!-- Título complementario con las fechas de la conmemoración -->
+        <div class="timeline"> <!-- Contenedor para estructurar los elementos en forma de línea del tiempo -->
+            <div class="timeline-item"> <!-- Contenedor para la información de Miguel Hidalgo -->
+                <div class="date">(1) Miguel Hidalgo y Costilla (1753–1811)</div> <!-- Etiqueta visual con el nombre y fechas del personaje -->
+                <p>Sacerdote y militar erudito, formado en el Colegio de San Nicolás. Dominaba lenguas indígenas como náhuatl y otomí, además de francés. Tras el Grito de Dolores, abolió la esclavitud en México mediante un decreto emitido en Guadalajara en diciembre de 1810. Fue capturado y fusilado en Chihuahua en 1811. Considerado el "Padre de la Patria", inició la gesta independentista la madrugada del 16 de septiembre de 1810 con el famoso Grito de Dolores.</p> <!-- Descripción biográfica del personaje -->
+                <img src="Miguel2.png" width="200" height="200"> <!-- Imagen representativa 'Miguel2.png' con dimensiones de 200x200 píxeles -->
+            </div> <!-- Cierre del contenedor de Miguel Hidalgo -->
+            <div class="timeline-item"> <!-- Contenedor para la información de Josefa Ortiz de Domínguez -->
+                <div class="date">(2) Josefa Ortiz de Domínguez (1768–1829):</div> <!-- Etiqueta con el nombre y fechas de la Corregidora -->
+                <p>Esposa del corregidor de Querétaro, Miguel Domínguez. Facilitó su hogar para las reuniones clandestinas organizadas bajo la fachada de tertulias literarias. Al ser descubierta la conspiración, logró enviar un mensaje al capitán Ignacio Allende, lo que precipitó el inicio de la contienda.</p> <!-- Descripción del papel histórico de Josefa Ortiz de Domínguez -->
+                <img src="josefa.png" width="200" height="200"> <!-- Imagen representativa 'josefa.png' fijada a 200x200 píxeles -->
+            </div> <!-- Cierre del contenedor de Josefa Ortiz -->
+            <div class="timeline-item"> <!-- Contenedor para la información de José María Morelos -->
+                <div class="date">(3) José María Morelos y Pavón (1765–1815):</div> <!-- Etiqueta con el nombre y fechas de Morelos -->
+                <p>Exalumno de Hidalgo, asumió el liderazgo del movimiento tras la muerte de este. Destacó por su estrategia militar en el sur del país y por convocar el Congreso de Anáhuac en 1813, donde presentó los Sentimientos de la Nación, sentando las bases del México republicano e independiente.</p> <!-- Párrafo con los aportes políticos y militares de Morelos -->
+                <img src="jose.png" width="200" height="200"> <!-- Imagen representativa 'jose.png' ajustada a 200x200 píxeles -->
+            </div> <!-- Cierre del contenedor de José María Morelos -->
+            <div class="timeline-item"> <!-- Contenedor para la información de Ignacio Allende -->
+                <div class="date">(4) Ignacio Allende (1769–1811):</div> <!-- Etiqueta con el nombre y fechas de Allende -->
+                <p>Capitán del regimiento de Dragones de la Reina. Aportó la formación militar estratégica en los inicios del movimiento. Tuvo importantes diferencias tácticas con Hidalgo respecto al control de las tropas. Fue capturado en Acatita de Baján y ejecutado junto a los primeros caudillos.</p> <!-- Párrafo con la trayectoria militar de Ignacio Allende -->
+                <img src="ignacio.png" width="200" height="200"> <!-- Imagen representativa 'ignacio.png' de 200x200 píxeles -->
+            </div> <!-- Cierre del contenedor de Ignacio Allende -->
 
-            <h2 class="page-title">BATALLA DE CHAPULTEPEC</h2>
-            <h2 class="page-title">(13 de septiembre de 1847):</h2>
-            <h3 class="page-title" style="text-align: center;">Los Niños Héroes: Cadetes del Colegio Militar que hicieron frente a la invasión estadounidense encabezada por el general Winfield Scott</h3>
-            <div class="timeline-item">
-                <div class="date">(1) Juan de la Barrera (1828–1847): </div>    
-                <p>Con 19 años, era el mayor del grupo y contaba con el grado de teniente de ingenieros. Diseñó y construyó las fortificaciones y trincheras en la base del cerro. Murió combatiendo en el hornabeque defensivo antes de que los invasores alcanzaran la cima.</p>
-                <img src="juan.png" width="200" height="200">
-            </div>
-            <div class="timeline-item"> 
-                <div class="date">(2) Juan Escutia (1827–1847):</div>    
-                <p>Nacido en Tepic, Nayarit, tenía 20 años al momento de la batalla y pertenecía al Batallón de San Blas. Su cuerpo fue hallado en las laderas del cerro. La historiografía militar y la tradición popular le atribuyen la acción de envolverse en el pabellón nacional para defenderlo del enemigo. </p>
-                <img src="juan2.png" width="200" height="200">
-            </div>
+            <h2 class="page-title">BATALLA DE CHAPULTEPEC</h2> <!-- Encabezado secundario de sección para la Batalla de Chapultepec -->
+            <h2 class="page-title">(13 de septiembre de 1847):</h2> <!-- Subtítulo con la fecha histórica del acontecimiento -->
+            <h3 class="page-title" style="text-align: center;">Los Niños Héroes: Cadetes del Colegio Militar que hicieron frente a la invasión estadounidense encabezada por el general Winfield Scott</h3> <!-- Título de nivel 3 centrado que presenta a los cadetes del Colegio Militar -->
+            <div class="timeline-item"> <!-- Contenedor con la información de Juan de la Barrera -->
+                <div class="date">(1) Juan de la Barrera (1828–1847): </div> <!-- Nombre y fechas de Juan de la Barrera -->
+                <p>Con 19 años, era el mayor del grupo y contaba con el grado de teniente de ingenieros. Diseñó y construyó las fortificaciones y trincheras en la base del cerro. Murió combatiendo en el hornabeque defensivo antes de que los invasores alcanzaran la cima.</p> <!-- Detalles de la defensa a cargo de Juan de la Barrera -->
+                <img src="juan.png" width="200" height="200"> <!-- Imagen representativa 'juan.png' fijada a 200x200 píxeles -->
+            </div> <!-- Cierre del contenedor de Juan de la Barrera -->
+            <div class="timeline-item"> <!-- Contenedor con la información de Juan Escutia -->
+                <div class="date">(2) Juan Escutia (1827–1847):</div> <!-- Nombre y fechas de Juan Escutia -->
+                <p>Nacido en Tepic, Nayarit, tenía 20 años al momento de la batalla y pertenecía al Batallón de San Blas. Su cuerpo fue hallado en las laderas del cerro. La historiografía militar y la tradición popular le atribuyen la acción de envolverse en el pabellón nacional para defenderlo del enemigo. </p> <!-- Reseña sobre Juan Escutia y el lábaro patrio -->
+                <img src="juan2.png" width="200" height="200"> <!-- Imagen representativa 'juan2.png' de 200x200 píxeles -->
+            </div> <!-- Cierre del contenedor de Juan Escutia -->
 
-            <div class="timeline-item"> 
-                <div class="date">(3) Agustín Melgar (1829–1847):</div>    
-                <p>Originario de Chihuahua, contaba con 18 años. Tras ser dado de baja del Colegio Militar, solicitó su reingreso ante la amenaza invasora. Defendió el acceso a la sala de banderas dentro del Castillo, donde combatió cuerpo a cuerpo hasta caer gravemente herido; falleció al día siguiente por la gravedad de sus lesiones. </p>
-                <img src="agustin.png" width="200" height="200">
-            </div>
+            <div class="timeline-item"> <!-- Contenedor con la información de Agustín Melgar -->
+                <div class="date">(3) Agustín Melgar (1829–1847):</div> <!-- Nombre y fechas de Agustín Melgar -->
+                <p>Originario de Chihuahua, contaba con 18 años. Tras ser dado de baja del Colegio Militar, solicitó su reingreso ante la amenaza invasora. Defendió el acceso a la sala de banderas dentro del Castillo, donde combatió cuerpo a cuerpo hasta caer gravemente herido; falleció al día siguiente por la gravedad de sus lesiones. </p> <!-- Reseña de la participación de Agustín Melgar -->
+                <img src="agustin.png" width="200" height="200"> <!-- Imagen representativa 'agustin.png' de 200x200 píxeles -->
+            </div> <!-- Cierre del contenedor de Agustín Melgar -->
 
-            <div class="timeline-item"> 
-                <div class="date">(4) Vicente Suárez (1833–1847):</div>    
-                <p>Nacido en Puebla, tenía apenas 14 años. Desempeñaba la labor de centinela en la guardia del edificio. Al escuchar el avance enemigo, dio el grito de alarma y enfrentó con su fusil a los soldados estadounidenses, siendo abatido en el puesto de guardia. </p>
-                <img src="suarez.png" width="200" height="200">
-            </div>
+            <div class="timeline-item"> <!-- Contenedor con la información de Vicente Suárez -->
+                <div class="date">(4) Vicente Suárez (1833–1847):</div> <!-- Nombre y fechas de Vicente Suárez -->
+                <p>Nacido en Puebla, tenía apenas 14 años. Desempeñaba la labor de centinela en la guardia del edificio. Al escuchar el avance enemigo, dio el grito de alarma y enfrentó con su fusil a los soldados estadounidenses, siendo abatido en el puesto de guardia. </p> <!-- Párrafo sobre la acción defensiva de Vicente Suárez -->
+                <img src="suarez.png" width="200" height="200"> <!-- Imagen representativa 'suarez.png' ajustada a 200x200 píxeles -->
+            </div> <!-- Cierre del contenedor de Vicente Suárez -->
 
-            <div class="timeline-item"> 
-                <div class="date">(5) Fernando Montes de Oca (1829–1847): </div>    
-                <p>Originario del Estado de México, tenía 18 años. Durante el asalto, intentó retirarse hacia el interior del edificio para reunirse con sus compañeros, pero fue emboscado por las tropas enemigas en el sector norte de la cima. </p>
-                <img src="montes.png" width="200" height="200">
-            </div>
+            <div class="timeline-item"> <!-- Contenedor con la información de Fernando Montes de Oca -->
+                <div class="date">(5) Fernando Montes de Oca (1829–1847): </div> <!-- Nombre y fechas de Fernando Montes de Oca -->
+                <p>Originario del Estado de México, tenía 18 años. Durante el asalto, intentó retirarse hacia el interior del edificio para reunirse con sus compañeros, pero fue emboscado por las tropas enemigas en el sector norte de la cima. </p> <!-- Párrafo con la reseña de Fernando Montes de Oca -->
+                <img src="montes.png" width="200" height="200"> <!-- Imagen representativa 'montes.png' de 200x200 píxeles -->
+            </div> <!-- Cierre del contenedor de Fernando Montes de Oca -->
 
-            <div class="timeline-item"> 
-                <div class="date">(6) Francisco Márquez (1834–1847):</div>    
-                <p>Nacido en Guadalajara, Jalisco, era el más joven de todos con solo 13 años. Su cuerpo fue encontrado junto al de otros defensores cerca del área de la cantera, tras negarse a rendirse ante la avanzada enemiga.</p>
-                <img src="marquez.png" width="200" height="200">
-            </div>
+            <div class="timeline-item"> <!-- Contenedor con la información de Francisco Márquez -->
+                <div class="date">(6) Francisco Márquez (1834–1847):</div> <!-- Nombre y fechas de Francisco Márquez -->
+                <p>Nacido en Guadalajara, Jalisco, era el más joven de todos con solo 13 años. Su cuerpo fue encontrado junto al de otros defensores cerca del área de la cantera, tras negarse a rendirse ante la avanzada enemiga.</p> <!-- Reseña del cadete más joven del grupo -->
+                <img src="marquez.png" width="200" height="200"> <!-- Imagen representativa 'marquez.png' fijada a 200x200 píxeles -->
+            </div> <!-- Cierre del contenedor de Francisco Márquez -->
 
-            <h2 class="page-title">OTRAS FIGURAS HOMENAJEADAS:</h2>
+            <h2 class="page-title">OTRAS FIGURAS HOMENAJEADAS:</h2> <!-- Título secundario para figuras históricas adicionales -->
 
-            <div class="timeline-item"> 
-                <div class="date">(1) Belisario Domínguez (1863–1913):</div>    
-                <p>Médico y político chiapaneco. El 23 y 25 de septiembre de 1913 redactó sus célebres discursos parlamentarios denunciando los crímenes de Victoriano Huerta. Sus palabras provocaron su asesinato en octubre de ese mismo año, convirtiéndose en un símbolo de la libertad de expresión y la democracia en México.</p>
-                <img src="belisario.png" width="200" height="200">
-            </div>
+            <div class="timeline-item"> <!-- Contenedor con la información de Belisario Domínguez -->
+                <div class="date">(1) Belisario Domínguez (1863–1913):</div> <!-- Nombre y fechas de Belisario Domínguez -->
+                <p>Médico y político chiapaneco. El 23 y 25 de septiembre de 1913 redactó sus célebres discursos parlamentarios denunciando los crímenes de Victoriano Huerta. Sus palabras provocaron su asesinato en octubre de ese mismo año, convirtiéndose en un símbolo de la libertad de expresión y la democracia en México.</p> <!-- Párrafo explicativo del aporte democrático de Belisario Domínguez -->
+                <img src="belisario.png" width="200" height="200"> <!-- Imagen representativa 'belisario.png' ajustada a 200x200 píxeles -->
+            </div> <!-- Cierre del contenedor de Belisario Domínguez -->
 
-            <div class="timeline-item"> 
-                <div class="date">(2) Guillermo Prieto (1818–1897):</div>    
-                <p>Poeta, periodista y ministro de Hacienda durante el gobierno de Benito Juárez. Su intervención en Guadalajara en 1858 detuvo la ejecución de Juárez interponiéndose ante los fusiles. Además, fue un cronista clave del México del siglo XIX.</p>
-                <img src="prieto.png" width="200" height="200">
-            </div>
-    </main>
+            <div class="timeline-item"> <!-- Contenedor con la información de Guillermo Prieto -->
+                <div class="date">(2) Guillermo Prieto (1818–1897):</div> <!-- Nombre y fechas de Guillermo Prieto -->
+                <p>Poeta, periodista y ministro de Hacienda durante el gobierno de Benito Juárez. Su intervención en Guadalajara en 1858 detuvo la ejecución de Juárez interponiéndose ante los fusiles. Además, fue un cronista clave del México del siglo XIX.</p> <!-- Reseña de las aportaciones literarias y políticas de Guillermo Prieto -->
+                <img src="prieto.png" width="200" height="200"> <!-- Imagen representativa 'prieto.png' de 200x200 píxeles -->
+            </div> <!-- Cierre del contenedor de Guillermo Prieto -->
+        </div> <!-- Cierre de la estructura contenedora de la línea del tiempo -->
+    </main> <!-- Cierre de la sección principal del contenido -->
 
-    <footer>
-        <p>Elaborado por: <strong>Marco Andrés Bonilla Murillo</strong> | 5to J | Matrícula: 24308051280809</p>
-    </footer>
+    <footer> <!-- Pie de página del documento -->
+        <p>Elaborado por: <strong>Marco Andrés Bonilla Murillo</strong> | 5to J | Matrícula: 24308051280809</p> <!-- Información de autoría; 'strong' resalta el nombre en negrita -->
+    </footer> <!-- Cierre del pie de página -->
 
-</body>
-</html>
+</body> <!-- Cierre del cuerpo visible del sitio web -->
+</html> <!-- Cierre del elemento raíz HTML -->
