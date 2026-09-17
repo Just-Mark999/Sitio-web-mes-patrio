@@ -1,173 +1,173 @@
 /* Estilos Generales y Colores Patrios */
-:root {
-    --verde: #006847;
-    --blanco: #ffffff;
-    --rojo: #ce1126;
-    --dorado: #d4af37;
-    --gris-fondo: #f4f4f9;
-    --texto: #333333;
-    --negro: #000000;
-}
+:root { /* Define un pseudoclase raíz para almacenar variables CSS globales */
+    --verde: #006847; /* Variable global para el color verde patrio */
+    --blanco: #ffffff; /* Variable global para el color blanco */
+    --rojo: #ce1126; /* Variable global para el color rojo patrio */
+    --dorado: #d4af37; /* Variable global para el color dorado de acento */
+    --gris-fondo: #f4f4f9; /* Variable global para el color gris claro de fondo */
+    --texto: #333333; /* Variable global para el color de texto principal */
+    --negro: #000000; /* Variable global para el color negro */
+} /* Cierre de la definición de variables globales */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+* { /* Selector universal que aplica estilos a absolutamente todos los elementos HTML */
+    box-sizing: border-box; /* Incluye el padding y el borde dentro del cálculo del ancho y alto total */
+    margin: 0; /* Elimina los márgenes predeterminados del navegador */
+    padding: 0; /* Elimina los rellenos internos predeterminados del navegador */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define la familia tipográfica principal con alternativas de respaldo */
+} /* Cierre de los estilos universales */
 
-body {
-    background-color: var(--gris-fondo);
-    color: var(--texto);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+body { /* Aplica estilos al cuerpo general del documento */
+    background-color: var(--gris-fondo); /* Aplica el color gris claro al fondo de toda la página usando la variable */
+    color: var(--texto); /* Define el color general para el texto del sitio */
+    display: flex; /* Establece un contenedor flexible (Flexbox) para el cuerpo */
+    flex-direction: column; /* Organiza los elementos hijos en una columna vertical */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe como mínimo el 100% de la altura de la ventana */
+} /* Cierre del estilo para el body */
 
 /* Encabezado y Navegación */
-header {
-    background-color: var(--verde);
-    color: var(--blanco);
-    text-align: center;
-    padding: 1.5rem 1rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
+header { /* Estilos para la sección del encabezado superior */
+    background-color: var(--verde); /* Establece el fondo verde patrio mediante variable */
+    color: var(--blanco); /* Define el color del texto en blanco */
+    text-align: center; /* Centra horizontalmente todo el contenido interno */
+    padding: 1.5rem 1rem; /* Aplica relleno interno de 1.5rem arriba/abajo y 1rem a los lados */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Añade una ligera sombra en la parte inferior para dar profundidad */
+} /* Cierre del estilo para header */
 
-header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    letter-spacing: 1px;
-}
+header h1 { /* Estilos para el título principal dentro del header */
+    font-size: 2rem; /* Establece el tamaño de letra a 2rem */
+    margin-bottom: 0.5rem; /* Añade un margen inferior de 0.5rem para separar del elemento siguiente */
+    letter-spacing: 1px; /* Añade un espacio de 1px entre cada letra */
+} /* Cierre del estilo para el título del header */
 
-nav {
-    background-color: var(--rojo);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+nav { /* Estilos para la barra de navegación */
+    background-color: var(--rojo); /* Establece el fondo rojo patrio mediante variable */
+    display: flex; /* Activa el modelo Flexbox para alinear sus enlaces internos */
+    justify-content: center; /* Centra los enlaces horizontalmente en el contenedor */
+    flex-wrap: wrap; /* Permite que los enlaces pasen a la siguiente línea en pantallas pequeñas */
+} /* Cierre del estilo para nav */
 
-nav a {
-    color: var(--blanco);
-    padding: 1rem 1.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
+nav a { /* Estilos para los hipervínculos dentro de la barra de navegación */
+    color: var(--blanco); /* Define el color del texto del enlace en blanco */
+    padding: 1rem 1.5rem; /* Aplica un área de clic espaciada (1rem vertical, 1.5rem horizontal) */
+    font-size: 1rem; /* Establece el tamaño de la letra a 1rem */
+    font-weight: bold; /* Aplica formato de texto en negrita */
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    transition: background-color 0.3s; /* Suaviza el cambio del color de fondo durante 0.3 segundos */
+} /* Cierre del estilo para los enlaces del nav */
 
-nav a:hover, nav a.active {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-bottom: 4px solid var(--dorado);
-}
+nav a:hover, nav a.active { /* Estilos al pasar el cursor sobre los enlaces o para el enlace activo */
+    background-color: rgba(255, 255, 255, 0.2); /* Añade un fondo blanco semitransparente del 20% */
+    border-bottom: 4px solid var(--dorado); /* Coloca un borde inferior dorado de 4px */
+} /* Cierre del estilo de estado para los enlaces */
 
 /* Contenedor Principal */
-main {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    flex: 1;
-}
+main { /* Estilos para la sección del contenido principal */
+    max-width: 1000px; /* Limita el ancho máximo del contenedor a 1000 píxeles */
+    margin: 2rem auto; /* Centra horizontalmente la sección y añade 2rem de margen arriba y abajo */
+    padding: 0 1rem; /* Agrega un relleno lateral de 1rem para evitar que choque con bordes */
+    flex: 1; /* Permite que el contenedor crezca para ocupar el espacio disponible antes del footer */
+} /* Cierre del estilo para main */
 
-h2.page-title {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: var(--verde);
-}
+h2.page-title { /* Estilos para los títulos de página que tienen la clase page-title */
+    text-align: center; /* Centra el texto del título */
+    margin-bottom: 1.5rem; /* Añade espacio inferior de 1.5rem antes del contenido */
+    color: var(--verde); /* Define el color del texto en verde patrio */
+} /* Cierre del estilo para h2.page-title */
 
 /* Sección Inicio / Hero */
-.hero-section {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-}
+.hero-section { /* Estilos para el contenedor destacado en la página de inicio */
+    background: white; /* Establece un fondo blanco para el bloque */
+    padding: 2rem; /* Aplica relleno interno de 2rem alrededor de todo el contenido */
+    border-radius: 8px; /* Redondea las esquinas de la tarjeta a 8 píxeles */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Agrega una suave sombra alrededor de la tarjeta */
+    text-align: center; /* Centra el texto de manera predeterminada */
+} /* Cierre del estilo para hero-section */
 
-.hero-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-    border: 4px solid var(--dorado);
-}
+.hero-section img { /* Estilos para las imágenes dentro de la sección hero */
+    max-width: 100%; /* Garantiza que la imagen no sobrepase el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen al escalar */
+    border-radius: 8px; /* Redondea las esquinas de la imagen a 8 píxeles */
+    margin-bottom: 1.5rem; /* Agrega espacio de 1.5rem por debajo de la imagen */
+    border: 4px solid var(--dorado); /* Coloca un marco dorado continuo de 4px alrededor */
+} /* Cierre del estilo para las imágenes del hero */
 
-.hero-section h2 {
-    color: var(--verde);
-    margin-bottom: 1rem;
-}
+.hero-section h2 { /* Estilos para el título secundario dentro del hero */
+    color: var(--verde); /* Establece el color de la letra en verde patrio */
+    margin-bottom: 1rem; /* Separa el título del párrafo mediante 1rem de margen inferior */
+} /* Cierre del estilo para h2 en hero-section */
 
-.hero-section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    text-align: justify;
-}
+.hero-section p { /* Estilos para los párrafos dentro de la sección hero */
+    font-size: 1.1rem; /* Define un tamaño de fuente ligeramente más grande a 1.1rem */
+    line-height: 1.6; /* Aumenta el interlineado a 1.6 para facilitar la lectura */
+    text-align: justify; /* Justifica el texto alineándolo a ambos márgenes */
+} /* Cierre del estilo para párrafos en hero-section */
 
 /* Grid de Tarjetas (Personajes y Mitos) */
-.grid-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-}
+.grid-cards { /* Estilos para el contenedor con disposición en cuadrícula */
+    display: grid; /* Activa la maquetación mediante CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Crea columnas flexibles responsivas de mínimo 280px */
+    gap: 1.5rem; /* Establece una separación constante de 1.5rem entre cada tarjeta */
+} /* Cierre del estilo para grid-cards */
 
-.card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-top: 5px solid var(--verde);
-}
+.card { /* Estilos para cada tarjeta individual */
+    background: white; /* Define un fondo blanco para la tarjeta */
+    padding: 1.5rem; /* Añade relleno interno de 1.5rem */
+    border-radius: 8px; /* Redondea las esquinas a 8 píxeles */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Añade una sombra sutil para dar volumen */
+    border-top: 5px solid var(--verde); /* Coloca una línea decorativa verde de 5px en el borde superior */
+} /* Cierre del estilo para card */
 
-.card h3 {
-    color: var(--rojo);
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-    text-align: center;
-}
+.card h3 { /* Estilos para los títulos dentro de cada tarjeta */
+    color: var(--rojo); /* Aplica el color rojo patrio mediante la variable */
+    margin-bottom: 0.5rem; /* Define un espacio inferior de 0.5rem */
+    font-size: 1.2rem; /* Ajusta la fuente a 1.2rem */
+    text-align: center; /* Centra horizontalmente el título */
+} /* Cierre del estilo para h3 en card */
 
-.card p {
-    line-height: 1.5;
-    font-size: 0.95rem;
-    text-align: justify;
-}
+.card p { /* Estilos para los párrafos de texto dentro de cada tarjeta */
+    line-height: 1.5; /* Establece la altura de línea en 1.5 para mejor lectura */
+    font-size: 0.95rem; /* Ajusta levemente el tamaño de texto a 0.95rem */
+    text-align: justify; /* Alinea los márgenes izquierdo y derecho del párrafo */
+} /* Cierre del estilo para párrafos en card */
 
 /* Lista de Fechas Importantes */
-.timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
+.timeline { /* Estilos para el contenedor de la línea del tiempo */
+    display: flex; /* Activa Flexbox para organizar los eventos */
+    flex-direction: column; /* Apila los eventos verticalmente */
+    gap: 1rem; /* Añade un espacio vertical de 1rem entre cada ítem */
+} /* Cierre del estilo para timeline */
 
-.timeline-item {
-    background: white;
-    padding: 1.5rem;
-    border-left: 6px solid var(--rojo);
-    border-radius: 0 8px 8px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: justify;
-}
+.timeline-item { /* Estilos para cada bloque o evento dentro de la línea del tiempo */
+    background: white; /* Establece el fondo en blanco */
+    padding: 1.5rem; /* Añade un espacio interno de 1.5rem */
+    border-left: 6px solid var(--rojo); /* Coloca una barra indicadora roja de 6px en el lateral izquierdo */
+    border-radius: 0 8px 8px 0; /* Redondea únicamente las esquinas de la derecha a 8 píxeles */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Aplica sombra sutil para elevar la tarjeta */
+    text-align: justify; /* Justifica el texto descriptivo del evento */
+} /* Cierre del estilo para timeline-item */
 
-.timeline-item .date {
-    font-weight: bold;
-    color: var(--verde);
-    font-size: 1.1rem;
-    margin-bottom: 0.3rem;
-    text-align: justify;
-}
+.timeline-item .date { /* Estilos específicos para la fecha dentro del elemento timeline */
+    font-weight: bold; /* Aplica estilo en negrita a la fecha */
+    color: var(--verde); /* Asigna el color verde patrio a la fecha */
+    font-size: 1.1rem; /* Ajusta la tipografía a 1.1rem */
+    margin-bottom: 0.3rem; /* Separa la fecha del título con 0.3rem de margen inferior */
+    text-align: justify; /* Alinea la fecha en modo justificado */
+} /* Cierre del estilo para .date en timeline-item */
 
-.timeline-item h3 {
-    margin-bottom: 0.5rem;
-}
+.timeline-item h3 { /* Estilos para los títulos de cada evento en la línea del tiempo */
+    margin-bottom: 0.5rem; /* Aplica un margen inferior de 0.5rem para distanciar del párrafo */
+} /* Cierre del estilo para h3 en timeline-item */
 
 /* Pie de Página */
-footer {
-    background-color: var(--verde);
-    color: var(--blanco);
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-}
+footer { /* Estilos para el bloque del pie de página */
+    background-color: var(--verde); /* Establece el fondo en verde patrio */
+    color: var(--blanco); /* Define el color del texto en blanco */
+    text-align: center; /* Centra el contenido del pie de página */
+    padding: 1rem; /* Aplica un relleno interno de 1rem */
+    margin-top: 2rem; /* Separa el pie de página del contenido superior por 2rem */
+    font-size: 0.9rem; /* Reduce ligeramente la tipografía a 0.9rem */
+} /* Cierre del estilo para footer */
 
-footer strong {
-    color: var(--blanco);
-}
+footer strong { /* Estilos para el texto resaltado dentro del pie de página */
+    color: var(--blanco); /* Mantiene el texto destacado con el color blanco */
+} /* Cierre del estilo para strong en footer */
